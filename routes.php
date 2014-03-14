@@ -27,6 +27,11 @@ Route::get('dbtest', function()
     return View::make('testdata')->with('testdata',$testdata);
 });
 
+Route::get('boottest', function()
+{
+	return View::make('boottest');
+});
+
 Route::get('dbtest2', 'DbtestController@showDbData');
 
 Route::get('seiyukai', 'SeiyukaiController@showDbData');
