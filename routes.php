@@ -26,6 +26,12 @@ Route::get('dbtest', function()
     $testdata = testdata::all();
     return View::make('testdata')->with('testdata',$testdata);
 });
+//cssとかその他もろもろpublic以下に置きたかったものたち
+
+Route::get('tbs/{id}', function($id)
+{
+    return 'Tbs '.$id;
+});
 
 Route::get('boottest', function()
 {

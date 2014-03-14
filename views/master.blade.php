@@ -11,7 +11,7 @@
 <div class="navbar">
 <div class="navbar-inner">
 <div class="ccontainer">
-<a href="#" class="brand">WinRoad徒然草</a>
+<a href="#" class="brand">やったぜ</a>
 <ul class="nav">
  @section('navigation')
  <li><a href='#'>TOP</a></li>
