@@ -9,11 +9,14 @@
 | It's a breeze. Simply tell Laravel the URIs it should respond to
 | and give it the Closure to execute when that URI is requested.
 |
+|ルーティングの使い方基本
+	return 	View::	make('hello');
+			↑        ↑view/hello.phpのビューを生成するよ
 */
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('top');
 });
 
 
@@ -25,12 +28,6 @@ Route::get('dbtest', function()
 {
     $testdata = testdata::all();
     return View::make('testdata')->with('testdata',$testdata);
-});
-//cssとかその他もろもろpublic以下に置きたかったものたち
-
-Route::get('tbs/{id}', function($id)
-{
-    return 'Tbs '.$id;
 });
 
 Route::get('boottest', function()
